@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculadora2">
+
+    <Button
+        android:id="@+id/bdivide"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="18dp"
+        android:text="/"
+        app:layout_constraintStart_toEndOf="@+id/bmultiplica"
+        app:layout_constraintTop_toBottomOf="@+id/bmenos" />
+
+    <Button
+        android:id="@+id/bmultiplica"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="23dp"
+        android:text="*"
+        app:layout_constraintStart_toEndOf="@+id/N2"
+        app:layout_constraintTop_toBottomOf="@+id/bmais" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULADORA QUE MANDA DADOS PARA OUTRA TELA"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <EditText
+        android:id="@+id/N1"
+        android:layout_width="78dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/N2"
+        android:layout_width="78dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/N1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/bmais"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="35dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/N2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/bmenos"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="35dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/bmais"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
