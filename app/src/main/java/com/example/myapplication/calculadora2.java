@@ -56,6 +56,10 @@ public class calculadora2 extends AppCompatActivity {
                 int num2 = Integer.parseInt(n2);
                 int subtrair = num1-num2;
 
+                Intent it = new Intent(calculadora2.this,calculadora2dados.class);
+                it.putExtra("resultado",String.valueOf(subtrair));
+                startActivity(it);
+
             }
         });
 
@@ -68,6 +72,10 @@ public class calculadora2 extends AppCompatActivity {
                 int num2 = Integer.parseInt(n2);
                 int multiplicar = num1*num2;
 
+                Intent it = new Intent(calculadora2.this,calculadora2dados.class);
+                it.putExtra("resultado",String.valueOf(multiplicar));
+                startActivity(it);
+
             }
         });
 
@@ -79,6 +87,9 @@ public class calculadora2 extends AppCompatActivity {
                 int num1 = Integer.parseInt(n1);
                 int num2 = Integer.parseInt(n2);
                 int dividir = num1/num2;
+                Intent it = new Intent(calculadora2.this,calculadora2dados.class);
+                it.putExtra("resultado",String.valueOf(dividir));
+                startActivity(it);
 
             }
         });
